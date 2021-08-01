@@ -1,0 +1,8 @@
+{
+    "name": "Enable auto-merge for dependabot",
+    "description": "Enable auto-merge for dependabot, to automatically merge Dependabot pull-requests.",
+    "iconName": "auto-merge",
+    "filePatterns": [
+        "dependabot.yml$"
+    ]
+}

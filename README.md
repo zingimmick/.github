@@ -1,1 +1,1 @@
-# .github
+# GitHub workflow templates for me
