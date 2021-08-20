@@ -1,0 +1,12 @@
+{
+    "name": "Update copyright year(s) in license file",
+    "description": "Update copyright year(s) in license file automatically.",
+    "iconName": "update-copyright-years-in-license-file",
+    "categories": [
+        "PHP"
+    ],
+    "filePatterns": [
+        "LICENSE",
+        "license"
+    ]
+}
