@@ -4,7 +4,8 @@ on:
   workflow_call:
     inputs:
       fail-fast:
-        required: true
+        default: true
+        required: false
         type: boolean
 
 jobs:
