@@ -2,12 +2,16 @@ name: lint
 
 on:
   workflow_call:
+    inputs:
+      fail-fast:
+        required: true
+        type: boolean
 
 jobs:
   ecs:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: true
+      fail-fast: ${{ inputs.fail-fast }}
       matrix:
         php: [7.2, 7.3, 7.4, 8.0]
 
