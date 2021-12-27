@@ -1,22 +1,13 @@
-name: lint
+name: Lint
 
 on:
   workflow_call:
-    inputs:
-      fail-fast:
-        default: true
-        required: false
-        type: boolean
 
 jobs:
-  ecs:
+  lint:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: ${{ inputs.fail-fast }}
-      matrix:
-        php: [7.2, 7.3, 7.4, 8.0, 8.1]
 
-    name: PHP ${{ matrix.php }}
+    name: Lint
 
     steps:
       - name: Checkout code
@@ -24,8 +15,6 @@ jobs:
 
       - name: Setup PHP
         uses: shivammathur/setup-php@2.16.0
-        with:
-          php-version: ${{ matrix.php }}
 
       - name: Install dependencies
         uses: ramsey/composer-install@v1
