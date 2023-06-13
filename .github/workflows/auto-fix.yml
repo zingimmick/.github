@@ -19,7 +19,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.25.3
+        uses: shivammathur/setup-php@2.25.4
 
       - name: Install dependencies
         uses: ramsey/composer-install@v2
